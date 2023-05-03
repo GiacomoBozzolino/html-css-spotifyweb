@@ -7,9 +7,14 @@
 .row{
     display: flex;
     height: 100%;
-    
+    width: 100%;
 }
-
+.flex{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
 .justify-end{
     justify-content: end;
 }
@@ -54,11 +59,14 @@
     background-color: coral;
     overflow-y: scroll;
 }
-
+.col-100{
+    width: 100%;
+}
 .col-img{
     width: 200px;
     height: 200px;
     background-color: darkgreen;
+    margin:10px;
 }
 
 /* CLASSI FOOTER */
