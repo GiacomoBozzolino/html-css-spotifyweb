@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
     <title>My Spotify</title>
 </head>
     <body>
+        <!-- INIZIO TOP-BAR -->
         <div class="top-bar">
             <div class="row top justify-end ">
                 <div class="col-top"> 
@@ -15,22 +17,39 @@
                 </div>
             </div>
         </div>
+        <!-- FINE TOP-BAR -->
         <main>
             <div class="container">
                 <div class="row justify-end">
+                    <!-- INIZIO SIDE-BAR -->
                     <div class="side-bar">
                         <div class="side-content position-relative ">
-                            <div>Logo</div>
                             <div class="navigazione"> 
                                 <ul>
-                                    <li>Home</li>
-                                    <li>cerca</li>
-                                    <li>la tua libreria</li>
+                                    <li>
+                                        <div class="icon"><i class="fa-brands fa-spotify"></i></div>
+                                    </li>
+                                    <li> 
+                                        <div class="icon"><i class="fa-sharp fa-solid fa-house"></i></div>
+                                        <div class="icon-description">Home</div> 
+                                    </li>
+                                    <li> 
+                                        <div class="icon"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></div>
+                                        <div class="icon-description">Cerca</div> 
+                                    </li>
+                                    <li> 
+                                        <div class="icon"><i class="fa-solid fa-bookmark"></i></div>
+                                        <div class="icon-description">La tua libreria</div> 
+                                    </li>
                                 </ul>
                             </div>
                             <div class="playlist"> playlist
                                 <ul> 
-                                    <li>nome playlist</li>
+                                    <li> 
+                                        <div ><i class="fa-solid fa-square-plus"></i></div>
+                                        
+                                        <div class="icon-description">nome playlist</div>                                    
+                                    </li>
                                     <li>nome playlist</li>
                                     <li>nome playlist</li>
                                     <li>nome playlist</li>
@@ -43,6 +62,8 @@
                             <div class="user">utente</div>
                         </div>
                     </div>
+                    <!-- FINE SIDE-BAR -->
+                    <!-- INIZIO SEZIONE MUSICA -->
                     <div class="main-section">
                         <div class="row wrap">
                             <div class="col-nav">
@@ -81,9 +102,11 @@
                             </div>
                         </div>
                     </div>
+                    <!-- FINE SEZIONE MUSICA -->
                 </div>
             </div>
         </main>
+        <!-- INZIO FOOTER -->
         <footer>
                 <div class="row space-between">
                     <div class="col-footer"></div>
@@ -91,5 +114,6 @@
                     <div class="col-footer"></div>
                 </div>
         </footer>
+        <!-- FINE FOOTER -->
     </body>
 </html>

@@ -84,6 +84,14 @@ ul li{
    
 }
 
+.playlist li, .navigazione li{
+    display: flex;
+}
+.icon{
+    padding-right: 10px;
+}
+
+
 .user{
     position: absolute;
     bottom:0;
@@ -169,16 +177,28 @@ footer{
     .container{
         max-width: 480px ;
     }
+    /* CLASSI SIDE-BAR */
+    .side-bar{
+        width: 50px;
+    }
+    .icon{
+        display: block;
+    }
+    .icon-description, .playlist{
+        display: none;
+    }
 
+    /* CLASSI MAIN */
+    .main-section{
+        width: calc(100vw - 50px);
+    }
+
+
+
+/* CLASSI FOOTER */
     footer{
         max-width: 480px 
     }
 
-    .side-bar{
-        width: 50px;
-    }
-    .main-section{
-        width: calc(100vw - 50px);
-    }
 
 }
