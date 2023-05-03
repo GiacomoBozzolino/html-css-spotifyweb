@@ -30,6 +30,9 @@ ul{
     list-style: none;
 }
 
+.position-relative{
+    position: relative;
+}
 /* CLASSI TOP-BAR */
 .top-bar{
     width: 100%;   
@@ -42,13 +45,13 @@ ul{
     left: 0;
 }
 .col-nav{
-    width: 60%;
+    width: 80%;
     background-color: beige;
     align-self:flex-start;
    
 }
 ul li{
-    padding: 20px;
+    padding: 10px 20px;
 }
 .menu-nav{
 
@@ -62,21 +65,41 @@ ul li{
 /* CLASSI SIDE-BAR */
 .side-bar{
     width: 150px;
-    height:1500px ;
+    height: calc(100% - 100px) ;
     background-color: black;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 5;
-    color: white;
-
-    
+    color: white; 
 }
+
+.side-content{
+    height: 100%;
+}
+
+.playlist{
+    overflow-y:scroll;
+    height: 50%;
+   
+}
+
+.user{
+    position: absolute;
+    bottom:0;
+}
+
+
+
+
+
+
+
 /* CLASSI MAIN */
 .main-section{
     width: calc(100vw - 150px);
-    padding-top: 200px;
-    height: 1500px;
+    padding: 100px 0;
+    /* height: 1500px; */
     background-color: coral;
     overflow-y: scroll;
 }
