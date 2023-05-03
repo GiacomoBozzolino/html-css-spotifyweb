@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /* CLASSI UTILITIES */
 .row{
     display: flex;
@@ -48,7 +50,9 @@
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 5
+    z-index: 5;
+    color: white;
+
     
 }
 /* CLASSI MAIN */
@@ -60,7 +64,9 @@
     overflow-y: scroll;
 }
 .col-100{
-    width: 100%;
+    width: calc(100% - 20px);
+    background-color: beige;
+    margin: 10px;
 }
 .col-img{
     width: 200px;
@@ -84,6 +90,39 @@ footer{
     width: 300px;
     height: 70px;
     background-color: cornsilk;
+    min-width: none;
 }
 
 /* CLASSI RESPONSIVE */
+
+/* RESPONSIVE MD */
+@media screen and (max-width:991px){
+    .container{
+        max-width: 991px ;
+    }
+
+    footer{
+        max-width: 991px 
+    }
+
+    .content.flex{
+        flex-wrap: wrap;
+    } 
+}
+
+
+/* RESPONSIVE xs */
+@media screen and (max-width:480px){
+    .container{
+        max-width: 480px ;
+    }
+
+    footer{
+        max-width: 480px 
+    }
+
+    .side-bar{
+        width: 50px;
+    }
+
+}
