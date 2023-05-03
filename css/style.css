@@ -13,9 +13,11 @@
 }
 .flex{
     display: flex;
+    
 }
 .wrap{
     flex-wrap: wrap;
+    justify-content: center;
 }
 .justify-end{
     justify-content: end;
@@ -23,6 +25,9 @@
 .space-between{
     justify-content: space-between;
     align-items: center;
+}
+ul{
+    list-style: none;
 }
 
 /* CLASSI TOP-BAR */
@@ -36,6 +41,18 @@
     right: 0;
     left: 0;
 }
+.col-nav{
+    width: 60%;
+    background-color: beige;
+    align-self:flex-start;
+   
+}
+ul li{
+    padding: 20px;
+}
+.menu-nav{
+
+}
     
 
 .row.top{
@@ -44,7 +61,7 @@
 
 /* CLASSI SIDE-BAR */
 .side-bar{
-    width: 300px;
+    width: 150px;
     height:1500px ;
     background-color: black;
     position: fixed;
@@ -57,7 +74,7 @@
 }
 /* CLASSI MAIN */
 .main-section{
-    width: calc(100vw - 300px);
+    width: calc(100vw - 150px);
     padding-top: 200px;
     height: 1500px;
     background-color: coral;
@@ -69,8 +86,8 @@
     margin: 10px;
 }
 .col-img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: darkgreen;
     margin:10px;
 }
@@ -111,7 +128,20 @@ footer{
 }
 
 
-/* RESPONSIVE xs */
+
+/* RESPONSIVE S */
+@media screen and (max-width:768px){
+    .container{
+        max-width: 768px ;
+    }
+
+    footer{
+        max-width: 768px 
+    }
+
+}
+
+/* RESPONSIVE XS */
 @media screen and (max-width:480px){
     .container{
         max-width: 480px ;
@@ -123,6 +153,9 @@ footer{
 
     .side-bar{
         width: 50px;
+    }
+    .main-section{
+        width: calc(100vw - 50px);
     }
 
 }
