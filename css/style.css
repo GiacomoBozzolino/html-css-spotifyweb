@@ -57,19 +57,16 @@ img{
     left: 0;
 }
 
-
-
 .col-top button{
     border: 1px solid white;
-    padding: 8px 15px;
-    margin-right: 10px;
+    padding: 15px 40px;
+    margin-right: 20px;
     background-color: transparent;
     color: white;
-    border-radius: 20px;
+    border-radius: 40px;
     font-weight: 700;
-    font-family : inherit;
+    font-family : inherit; 
 }
-
 
 .row.top{
    align-items: center;
@@ -80,7 +77,8 @@ img{
     width: 200px;
     background-color: black;
     z-index: 5;
-    color: white; 
+    color: lightgray; 
+    font-size: 12px;
 }
 
 .side-content{
@@ -88,23 +86,42 @@ img{
 }
 
 .playlist{
-    overflow-y:scroll;
+    overflow-y:auto;
     height: 40vh;
 }
 
 .playlist li, .navigazione li{
     display: flex;
+    align-items: center;
 }
 .icon{
     padding-right: 10px;
 }
-
 
 .user{
     position: absolute;
     bottom:0;
 }
 
+.icon{
+    color: white;
+    width: 40px;
+}
+
+.icon-description .flex{
+    align-items: center;
+
+}
+.icon-description h2{
+    padding:  20px 0 10px 20px;
+    font-size: 15px;
+    color: white;
+}
+
+#plus{
+    font-size: 40px;
+    padding: 0 10px 0 20px;
+}
 
 /* CLASSI MAIN */
 .col-nav{
@@ -126,7 +143,7 @@ ul li{
     padding: 100px 0;
     height: calc(100vh - 100px);
     background-color: rgba(20,25,34,255);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .col-100{
@@ -144,7 +161,7 @@ ul li{
 .col-img h2{
     color: white;
     font-size: 19px;
-    padding-bottom: 10px;
+    padding-bottom: 10px
 }
 
 .title{
@@ -154,6 +171,7 @@ ul li{
 .title h2{
     color: white;
     padding-bottom: 10px;
+    font-size: 27px;
 }
 
 .title div{
