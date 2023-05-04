@@ -74,17 +74,25 @@ img{
 
 /* CLASSI SIDE-BAR */
 .side-bar{
-    width: 200px;
+    width: 250px;
     background-color: black;
     z-index: 5;
     color: lightgray; 
-    font-size: 12px;
+    font-size: 17px;
 }
 
 .side-content{
     height: 100%;
 }
+#logo{
+    width:90%;
+    padding-top: 10px;
+}
 
+#logo-small{
+    width: 30px;
+    display: none;
+}
 .playlist{
     overflow-y:auto;
     height: 40vh;
@@ -96,16 +104,16 @@ img{
 }
 .icon{
     padding-right: 10px;
+    color: white;
+    width: 40px;
 }
 
 .user{
     position: absolute;
-    bottom:0;
-}
-
-.icon{
-    color: white;
-    width: 40px;
+    width: 100%;
+    bottom: 0;
+    padding:20px 20px 0 20px;
+    
 }
 
 .icon-description .flex{
@@ -122,6 +130,36 @@ img{
     font-size: 40px;
     padding: 0 10px 0 20px;
 }
+.user .flex{
+    margin-bottom: 5px;
+}
+
+.icon-bottom{
+    width: 12%;
+    margin-right: 5px;
+}
+
+.profile-bottom{
+    height:30px;
+    width: 30px;
+    background-color: grey;
+    border-radius: 100%;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+.flex.profile{
+    padding-top: 10px;
+    border-top: 1px solid white;
+    align-items: center;
+}
+
+.profile h2{
+    font-size: 17px;
+   
+}
+
+
 
 /* CLASSI MAIN */
 .col-nav{
@@ -139,7 +177,7 @@ ul li{
 }
 
 .main-section{
-    width: calc(100vw - 200px);
+    width: calc(100vw - 250px);
     padding: 100px 0;
     height: calc(100vh - 100px);
     background-color: rgba(20,25,34,255);
@@ -247,16 +285,55 @@ footer{
     .side-bar{
         width: 50px;
     }
-    .icon{
+    #logo{
+        display: none;
+    }
+
+    #logo-small, {
         display: block;
+        margin-top: 10px;
+       
+    }
+
+    .icon, .icon-bottom, .profile-bottom{
+        display: block;
+       
     }
     .icon-description, .playlist{
         display: none;
     }
+    .navigazione ul li{
+        padding:0 0 0 10px
+    }
+    .user{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-bottom{
+        width: 20px;
+        
+
+    }
+    .profile-bottom{
+        margin: 0;
+
+        
+    }
+    .flex.profile{
+        padding-top: 10px;
+        border-top: none;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+
+
     /* CLASSI TOP-BAR */
     .col-nav{
         width: 100%;
-      
     }
     
     /* CLASSI MAIN */
