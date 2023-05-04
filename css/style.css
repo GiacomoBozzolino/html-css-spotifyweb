@@ -113,6 +113,7 @@ img{
     width: 100%;
     bottom: 0;
     padding:20px 20px 0 20px;
+    background-color: black;
     
 }
 
@@ -152,6 +153,7 @@ img{
     padding-top: 10px;
     border-top: 1px solid white;
     align-items: center;
+    
 }
 
 .profile h2{
@@ -224,7 +226,7 @@ ul li{
 /* CLASSI FOOTER */
 footer{
     height: 100px;
-    background-color: darkblue;
+    background-color: rgba(40,40,40,255);
     position: fixed;
     bottom: 0;
     right: 0;
@@ -234,9 +236,7 @@ footer{
 }
 
 .col-footer{
-    width: 25%;
-    background-color: brown;
-   
+    width:250px;
 }
 
 .col-footer.center{
@@ -255,14 +255,28 @@ footer img{
 
 .play-menu{
     font-size: 30px;
+    padding: 10px;
 }
-
+.space-evenly{
+    justify-content: space-evenly;
+}
 .slider{
     width: 100%;
 }
-
+.audio-icon{
+    margin: 0 10px;
+}
 #volume{
-    width: 30%;
+    width: 50%;
+}
+
+.flex.space-between .flex{
+    align-items: center;
+    
+}
+
+.song-title{
+    font-size: 12px;
 }
 /* CLASSI RESPONSIVE */
 
