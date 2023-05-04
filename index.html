@@ -201,9 +201,9 @@
         <!-- INZIO FOOTER -->
         <footer>
                 <div class="row space-between">
-                    <div class="col-footer">
-                        <div class="content">
-                            <div>
+                    <div class="col-footer left">
+                        <div class="content flex space-between">
+                            <div class="flex ">
                                 <div>
                                     <img src="./img/sinister.jpeg" alt="">
                                 </div>
@@ -212,10 +212,37 @@
                                     <div>sottotitolo</div>
                                 </div>
                             </div>
+                            <div class="flex">
+                                <div class="footer-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="fa-regular fa-folder"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-footer"></div>
-                    <div class="col-footer"></div>
+                    <div class="col-footer center">
+                        <div class="play-menu flex space-between">
+                            <div><i class="fa-solid fa-shuffle"></i></div>
+                            <div><i class="fa-solid fa-backward-step"></i></div>
+                            <div><i class="fa-regular fa-circle-play"></i></div>
+                            <div><i class="fa-solid fa-forward-step"></i></div>
+                            <div><i class="fa-solid fa-rotate-right"></i></div>
+                        </div>
+                        <div class="music-player">
+                            <input type="range"  class="slider">
+                        </div>
+                    </div>
+                    <div class="col-footer right">
+                        <div class="flex space-between">
+                            <div><i class="fa-solid fa-bars"></i></div>
+                            <div><i class="fa-solid fa-desktop"></i></div>
+                            <div><i class="fa-solid fa-volume-high"></i></div>
+                            <input type="range"  class="slider" id="volume">
+                        </div>
+
+                    </div>
                 </div>
         </footer>
         <!-- FINE FOOTER -->

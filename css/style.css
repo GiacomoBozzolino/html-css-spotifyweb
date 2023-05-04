@@ -230,15 +230,36 @@ footer{
     right: 0;
     left: 0;
     z-index: 100;
+    color: white;
 }
 
 .col-footer{
-    width: 20%;
-    height: 70px;
-    background-color: cornsilk;
-    min-width: none;
+    width: 25%;
+    background-color: brown;
+   
 }
 
+footer img{
+    width: 50px;
+    height: 50px;
+    margin:0 20px
+}
+
+.footer-icon{
+    margin: 5px;
+}
+
+.play-menu{
+    font-size: 30px;
+}
+
+.slider{
+    width: 100%;
+}
+
+#volume{
+    width: 30%;
+}
 /* CLASSI RESPONSIVE */
 
 /* RESPONSIVE MD */
