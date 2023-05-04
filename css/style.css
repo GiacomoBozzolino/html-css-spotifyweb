@@ -57,15 +57,7 @@ img{
     left: 0;
 }
 
-.col-nav{
-    width: 80%;
-    background-color: beige;
-    align-self:flex-start;
-}
 
-ul li{
-    padding: 10px 20px;
-}
 
 .col-top button{
     border: 1px solid white;
@@ -77,9 +69,7 @@ ul li{
     font-weight: 700;
     font-family : inherit;
 }
-.menu-nav{
 
-}
 
 .row.top{
    align-items: center;
@@ -117,31 +107,62 @@ ul li{
 
 
 /* CLASSI MAIN */
+.col-nav{
+    width: 80%;
+    align-self:flex-start;
+    color: lightgray;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+ul li{
+    padding: 10px 20px;
+}
+
 .main-section{
     width: calc(100vw - 200px);
     padding: 100px 0;
     height: calc(100vh - 100px);
-    background-color: coral;
+    background-color: rgba(20,25,34,255);
     overflow-y: scroll;
-    
-   
 }
+
 .col-100{
     width: calc(100% - 20px);
-    background-color: beige;
     margin: 10px;
 }
 .col-img{
     width: calc(100%/6 - 20px);
-    /* height: 150px; */
-    background-color: darkgreen;
     margin:10px;
     text-align: center;
-    color:lightgray
+    color:lightgray;
+    font-size: 13px;
 }
 
 .col-img h2{
     color: white;
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+
+.title{
+    padding: 10px;
+}
+
+.title h2{
+    color: white;
+    padding-bottom: 10px;
+}
+
+.title div{
+    color: lightgray;
+}
+
+
+.circle-img{
+    border-radius:100%;
 }
 
 /* CLASSI FOOTER */
@@ -217,8 +238,7 @@ footer{
     /* CLASSI TOP-BAR */
     .col-nav{
         width: 100%;
-        background-color: beige;
-        align-self:flex-start;
+      
     }
     
     /* CLASSI MAIN */
