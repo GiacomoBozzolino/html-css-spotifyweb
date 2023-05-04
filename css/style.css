@@ -9,7 +9,7 @@
 .row{
     display: flex;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
 .flex{
     display: flex;
@@ -44,19 +44,19 @@ ul{
     right: 0;
     left: 0;
 }
+
 .col-nav{
     width: 80%;
     background-color: beige;
     align-self:flex-start;
-   
 }
+
 ul li{
     padding: 10px 20px;
 }
 .menu-nav{
 
 }
-    
 
 .row.top{
    align-items: center;
@@ -64,7 +64,7 @@ ul li{
 
 /* CLASSI SIDE-BAR */
 .side-bar{
-    width: 150px;
+    width: 200px;
     height: calc(100% - 100px) ;
     background-color: black;
     position: fixed;
@@ -80,7 +80,7 @@ ul li{
 
 .playlist{
     overflow-y:scroll;
-    height: 50%;
+    height: 40vh;
    
 }
 
@@ -98,14 +98,9 @@ ul li{
 }
 
 
-
-
-
-
-
 /* CLASSI MAIN */
 .main-section{
-    width: calc(100vw - 150px);
+    width: calc(100vw - 200px);
     padding: 100px 0;
     /* height: 1500px; */
     background-color: coral;
@@ -117,7 +112,7 @@ ul li{
     margin: 10px;
 }
 .col-img{
-    width: 150px;
+    width: calc(100%/6 - 20px);
     height: 150px;
     background-color: darkgreen;
     margin:10px;
@@ -135,7 +130,7 @@ footer{
 }
 
 .col-footer{
-    width: 300px;
+    width: 20%;
     height: 70px;
     background-color: cornsilk;
     min-width: none;
@@ -147,6 +142,10 @@ footer{
 @media screen and (max-width:991px){
     .container{
         max-width: 991px ;
+    }
+
+    .col-img{
+        width: calc(100%/4 - 20px);
     }
 
     footer{
@@ -165,6 +164,10 @@ footer{
     .container{
         max-width: 768px ;
     }
+    .col-img{
+        width: calc(100%/2 - 20px);
+    }
+
 
     footer{
         max-width: 768px 
@@ -173,9 +176,9 @@ footer{
 }
 
 /* RESPONSIVE XS */
-@media screen and (max-width:480px){
-    .container{
-        max-width: 480px ;
+@media screen and (max-width:600px){
+    .container, footer{
+        max-width: 600px ;
     }
     /* CLASSI SIDE-BAR */
     .side-bar{
@@ -187,7 +190,13 @@ footer{
     .icon-description, .playlist{
         display: none;
     }
-
+    /* CLASSI TOP-BAR */
+    .col-nav{
+        width: 100%;
+        background-color: beige;
+        align-self:flex-start;
+    }
+    
     /* CLASSI MAIN */
     .main-section{
         width: calc(100vw - 50px);
@@ -196,9 +205,7 @@ footer{
 
 
 /* CLASSI FOOTER */
-    footer{
-        max-width: 480px 
-    }
+    
 
 
 }
