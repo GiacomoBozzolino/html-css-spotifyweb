@@ -257,6 +257,10 @@ footer{
     margin: 0 10px;
 }
 
+.col-footer.right{
+    width: 350px;
+}
+
 .col-footer.center{
     width: 40%;
 }
@@ -312,24 +316,29 @@ footer img{
     left: 30px;
   }
 
-.fake-audio.lime{
-    position:absolute;
-    left: 100px;
+  .fake-audio.lime{
+    left:100px
+  }
 
-}
-
-  
   .lime:hover{
     background-color:lime
   }
 
-  .fake-point{
+  .fake-point, .fake-volume{
     position: absolute;
-    left: 27%;
     align-self: center;
     opacity: 0;
   }
 
+  .fake-point{
+    left: 25%;
+  }
+
+  .fake-volume{
+    left: 50%
+
+  }
+ 
 
 .footer-hr{
     justify-self: center;
@@ -343,7 +352,7 @@ footer img{
 
 .music-player{
     align-items: center;
-    justify-content: ;
+    
 }
 #volume{
     width: 100%;
@@ -379,8 +388,11 @@ footer img{
 
     .fake-point{
         left:30%;
-        
       }
+
+    .fake-volume{
+        left: 55%;
+    }
 }
 
 /* RESPONSIVE S */
@@ -404,6 +416,10 @@ footer img{
         left: 35%;
         
       }
+
+      .fake-volume{
+        left: 55%;
+    }
 
 }
 
@@ -481,8 +497,13 @@ footer img{
         display: flex;
         flex-wrap: wrap;
     }
-
+    .fake-audio.lime{
+        left:75px
+    }
    
+    .fake-volume{
+        left: 70%;
+    }
 }
 
 
@@ -554,7 +575,9 @@ button:hover{
 
   .flex:hover .fake-point  {
     opacity: 1;
-   
   }
 
+  .flex:hover .fake-volume  {
+    opacity: 1;
+  }
  
