@@ -80,9 +80,10 @@ a{
 }
 
 li hr{
-    color: lime;
-    height: 2px;
+   background-color: lime;
+    height: 3px;
     width: 30%;
+    border-radius: 1px;
     position: absolute;
     top: 100%;
     left: 50%;
