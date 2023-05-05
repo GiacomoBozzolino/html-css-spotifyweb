@@ -45,6 +45,11 @@ ul{
 img{
     width: 100%;
 }
+
+a{
+ text-decoration: none;
+ color: inherit
+}
 /* CLASSI TOP-BAR */
 .top-bar{
     width: 100%;   
@@ -72,6 +77,15 @@ img{
    align-items: center;
 }
 
+hr{
+    color: lime;
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
 /* CLASSI SIDE-BAR */
 .side-bar{
     width: 250px;
@@ -159,6 +173,11 @@ img{
 .profile h2{
     font-size: 17px;
    
+}
+
+
+#lime-bar{
+    border-left: 2px solid lime;
 }
 
 
@@ -342,6 +361,7 @@ footer img{
     .container, footer{
         max-width: 600px ;
     }
+
     /* CLASSI SIDE-BAR */
     .side-bar{
         width: 50px;
@@ -352,8 +372,7 @@ footer img{
 
     #logo-small{
         display: block;
-        margin-top: 10px;
-       
+        margin-top: 10px;  
     }
 
     .icon, .icon-bottom, .profile-bottom{
@@ -375,19 +394,21 @@ footer img{
 
     .icon-bottom{
         width: 20px;
-        
-
     }
+
     .profile-bottom{
-        margin: 0;
-
-        
+        margin: 0;  
     }
+
     .flex.profile{
         padding-top: 10px;
         border-top: none;
         align-items: center;
         padding-bottom: 5px;
+    }
+
+    #lime-bar{
+        display: none;
     }
 
     /* CLASSI TOP-BAR */
