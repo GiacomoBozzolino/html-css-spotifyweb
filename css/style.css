@@ -13,11 +13,12 @@ main{
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
 /* CLASSI UTILITIES */
 .row{
     display: flex;
     height: 100%;
-    /* width: 100%; */
+  
 }
 .flex{
     display: flex;
@@ -47,9 +48,10 @@ img{
 }
 
 a{
- text-decoration: none;
- color: inherit
+    text-decoration: none;
+    color: inherit
 }
+
 /* CLASSI TOP-BAR */
 .top-bar{
     width: 100%;   
@@ -172,14 +174,12 @@ li hr{
 
 .profile h2{
     font-size: 17px;
-   
 }
-
 
 #lime-bar{
     border-left: 2px solid lime;
 }
-
+/* FINE CLASSI SIDE-BAR */
 /* CLASSI MAIN */
 .col-nav{
     width: 80%;
@@ -239,7 +239,7 @@ ul li{
 .circle-img{
     border-radius:100%;
 }
-
+/* FINE CLASSI MAIN */
 /* CLASSI FOOTER */
 footer{
     height: 100px;
@@ -267,7 +267,6 @@ footer{
 
 footer img{
     width: 30%;
-    /* height: 50px; */
     margin:0 10px
 }
 
@@ -280,6 +279,7 @@ footer img{
     font-size: 20px;
     padding: 10px;
 }
+
 .play-menu.flex{
     justify-content: center;
     align-items: center;
@@ -296,9 +296,6 @@ footer img{
 .space-evenly{
     justify-content: space-evenly;
 }
-/* .slider{
-  width: 100%; 
-} */
 
 .fake-progression, .fake-audio{
     width: 100%;
@@ -307,43 +304,36 @@ footer img{
     border-radius:5px;
     align-self: center;
     margin: 0 20px;
-  }
+}
   
-  .lime{
+.lime{
     background-color:lightgrey;
     width:20%;
     position:absolute;
     left: 30px;
-  }
+}
 
-  .fake-audio.lime{
+.fake-audio.lime{
     left:100px
-  }
+}
 
-  .lime:hover{
+.lime:hover{
     background-color:lime
-  }
+}
 
-  .fake-point, .fake-volume{
+.fake-point, .fake-volume{
     position: absolute;
     align-self: center;
     opacity: 0;
-  }
-
-  .fake-point{
-    left: 25%;
-  }
-
-  .fake-volume{
-    left: 50%
-
-  }
- 
-
-.footer-hr{
-    justify-self: center;
 }
 
+.fake-point{
+    left: 25%;
+}
+
+.fake-volume{
+    left: 50%
+}
 
 .audio-icon{
     margin: 0 10px;
@@ -366,6 +356,8 @@ footer img{
 .song-title{
     font-size: 12px;
 }
+
+/* FINE CLASSI FOOTER */
 /* CLASSI RESPONSIVE */
 
 /* RESPONSIVE MD */
@@ -475,7 +467,7 @@ footer img{
     }
 
     #lime-bar{
-        display: none;
+       border:none;
     }
 
     /* CLASSI TOP-BAR */
