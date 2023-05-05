@@ -180,8 +180,6 @@ hr{
     border-left: 2px solid lime;
 }
 
-
-
 /* CLASSI MAIN */
 .col-nav{
     width: 80%;
@@ -264,13 +262,14 @@ footer{
 }
 
 footer img{
-    width: 20%;
+    width: 30%;
     /* height: 50px; */
     margin:0 10px
 }
 
 .footer-icon{
     margin: 5px;
+    color: grey;
 }
 
 .play-menu{
@@ -288,12 +287,14 @@ footer img{
 
 #play{
     font-size: 30px;
+    transition: .05s linear;
 }
 .space-evenly{
     justify-content: space-evenly;
 }
 .slider{
     width: 100%;
+    color: gray;
 }
 .audio-icon{
     margin: 0 10px;
@@ -344,8 +345,7 @@ footer img{
     .col-img{
         width: calc(100%/2 - 20px);
     }
-
-
+  
     footer{
         max-width: 768px 
     }
@@ -423,11 +423,78 @@ footer img{
 
     /* CLASSI FOOTER */
     .audio-icon{
-        margin: 0 5px;
-       
+        margin: 0 5px;   
+    }
+
+    .song-title div{
+        display: flex;
+        flex-wrap: wrap;
     }
     
-  
-
-
 }
+
+
+/* CLASSI EFFETTI HOVER */
+
+a:hover{
+    color: white;
+}
+/* TOP-BAR */
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer
+}
+
+/* SEZIONE MAIN */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: black;
+  }
+  .overlay.round{
+    border-radius: 50%;
+  }
+
+  .song:hover .overlay {
+    opacity: 0.8;
+  }
+  
+  .icon-hover {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .fa-user:hover {
+    color: #eee;
+  }
+
+  /* FOOTER */
+
+  #play:hover{
+    transform: scale(1.2);
+  }
+
+  .play-icon, #play, .song-title div span, .footer-icon{
+    cursor: pointer;
+  }
+
+  .song-title div span:hover{
+    text-decoration: underline;
+  }
+
+  .footer-icon:hover{
+    color: white;
+  }
